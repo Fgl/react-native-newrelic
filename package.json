@@ -1,7 +1,7 @@
 {
-  "name": "react-native-newrelic",
-  "version": "1.1.1",
-  "description": "New Relic wrapper for React Native",
+  "name": "rn-0.59-newrelic",
+  "version": "1.0.1",
+  "description": "New Relic wrapper for React Native 0.59",
   "main": "index.js",
   "scripts": {
     "build": "BABEL_ENV='test' babel src -d lib",
@@ -40,7 +40,7 @@
     "type": "git",
     "url": "git+https://github.com/wix/react-native-newrelic.git"
   },
-  "author": "",
+  "author": "fgl",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wix/react-native-newrelic/issues"
@@ -71,5 +71,9 @@
         "sourceMaps": false
       }
     }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
