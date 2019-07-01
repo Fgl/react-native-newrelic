@@ -8,6 +8,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
+ * Editted by FGL on 29/06/2019. 
+ * ReadableNativeMap to HashMap, this has been implemented already in RN 0.59's ReadableNativeMap.
+ */
+
+/**
  * Created by rotemm on 29/06/2016.
  */
 public class RNUtils {
@@ -40,7 +45,7 @@ public class RNUtils {
                     hashMap.put(key, toHashMap(readableNativeMap.getMap(key)));
                     break;
                 case Array:
-                    hashMap.put(key, toArrayList(readableNativeMap.getArray(key)));
+                    hashMap.put(key, toArrayList((ReadableNativeArray)readableNativeMap.getArray(key)));
                     break;
                 default:
                     throw new IllegalArgumentException("Could not convert object with key: " + key + ".");
